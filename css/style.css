@@ -1,0 +1,118 @@
+@font-face {
+    font-family: red-hat;
+    src: url(../Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf);
+    font-weight: 500;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    font-family: red-hat;
+    font-size: 16px;
+}
+.main{
+    width: 380px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+}
+.main > div > img{
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+}
+.main > div:nth-child(2){
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+.main > p:nth-child(3){
+    text-align: center;
+    margin: 0 38px 20px;
+    width: 300px;
+    color: hsl(224, 23%, 55%);
+}
+.main > div:nth-child(4){
+    width: 75%;
+    text-align: center;
+    height: 100px;
+    background-color: hsl(225, 100%, 98%);
+    margin: 0 auto;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 1fr auto;
+}
+.main > div:nth-child(4) div:nth-child(1){
+    grid-area: 1 / 1 / 3 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main > div:nth-child(4) div:nth-child(2){
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.main > div:nth-child(4) div:nth-child(3){
+    height: 50px;
+    grid-area: 2 / 2 / 3 / 3;
+    display: flex;
+    justify-content: flex-start;
+}
+.main > div:nth-child(4) div:nth-child(4){
+    grid-area: 1 / 3 / 3 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 10px;
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+    font-size: 13px;
+}
+.main > div:nth-child(4) div:nth-child(4) a:hover{
+    color: hsla(245, 75%, 52%, 0.824);
+    text-decoration: none;
+    transition-duration: 0.5s ;
+}
+.main > div:nth-child(5){
+    width: 75%;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px 47px;
+    background-color: hsl(245, 75%, 52%);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+
+}
+.main > div:nth-child(5):hover{
+    cursor: pointer;
+    transition-duration: 0.5s ;
+    background-color: hsla(245, 75%, 52%, 0.734);
+}
+.main > div:nth-child(6){
+    text-align: center;
+    font-size: 13px;
+    font-weight: 900;
+    color: hsl(224, 23%, 55%);
+}
+.main > div:nth-child(6):hover{
+    transition-duration: 0.5s ;
+    cursor: pointer;
+    color: black;
+}
